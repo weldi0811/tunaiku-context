@@ -44,6 +44,7 @@ class Slider2 extends Component {
         )
     }
 
+
     static contextType = ProfileContext
 
     render() {
@@ -69,14 +70,7 @@ class Slider2 extends Component {
 
                         {this.renderPeriodeSlider()}
                     </div>
-                    <div className='card-body'>
-                        <button
-                            type='button'
-                            className='btn btn-success'
-                            onClick={() => { this.ajukanPinjaman() }}>
-                            Ajukan Pinjaman
-                                            </button>
-                    </div>
+                    
 
                 </div>
             </div>

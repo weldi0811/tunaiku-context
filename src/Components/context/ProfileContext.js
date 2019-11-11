@@ -15,7 +15,8 @@ class ProfileContextProvider extends Component {
         angsuran: '410.000',
         nik: '',
         gender: '',
-        birth: ''
+        birth: '',
+        formSubmitted : false
     }
 
     commitPinjaman = (event, value) => {

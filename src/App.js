@@ -5,15 +5,18 @@ import Summary from './Components/Summary';
 import ProfileContextProvider from './Components/context/ProfileContext';
 import Home from './Components/Home'
 import './style/style.css'
- 
+import { BrowserRouter, Route } from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
         <ProfileContextProvider>
-        <Home />
+          <Route path ='/' exact component={Home} />
+          <Route path ='/summary' component={Summary} />
         </ProfileContextProvider>
-      
+      </BrowserRouter>
+
     </div>
   );
 }

@@ -29,7 +29,8 @@ class Form extends Component {
         tahuTunaiku: '',
         nik: '',
         gender: '',
-        birth: ''
+        birth: '',
+        formSubmitted : false
     }
 
 
@@ -53,10 +54,11 @@ class Form extends Component {
                         nik: values.nik,
                         emailOwned: values.emailOwned,
                         tujuanPinjaman: values.tujuanPinjaman,
-                        tahuTunaiku: values.tahuTunaiku
+                        tahuTunaiku: values.tahuTunaiku,
                     })
                     this.context.validateForm(this.state)
                     console.log('tes submit')
+                    console.log(this.context)
                     // console.log('ini setelah submit')
                     // console.log(this.context)
                 }, 20)
