@@ -4,6 +4,13 @@
       width: 200px !important;
   
 }
+.dropdown-content{
+  background-color: #202264
+}
+
+.no-line {
+  text-decoration: none;
+}
 
 .bg-card {
   background-color : #004C7B;
@@ -30,11 +37,21 @@
   border-radius: 15px;
 }
 
+.btn-go{
+  border-radius: 25px;
+}
+
 
 a.btnLogin {
     border-style : solid;
-    border-width : small;
+    border-width : 2px;
     border-radius : 5px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .f-dropdown .divider {
@@ -136,6 +153,15 @@ a.btnLogin {
     height: 120px;
     animation: spin 2s linear infinite;
     margin: 0 auto;
+  }
+
+  .font-small {
+    font-size : 13px
+  }
+
+  .padding-home {
+    padding-left : 100px;
+    padding-right : 100px
   }
   
   @keyframes spin {

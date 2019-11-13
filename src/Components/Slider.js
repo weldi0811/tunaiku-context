@@ -18,7 +18,7 @@ class Slider2 extends Component {
     renderPinjamanSlider = () => {
         return (
             <div>
-                <h4>Jumlah Pinjaman : Rp {this.context.pinjaman} juta,-</h4>
+                <h5>Jumlah Pinjaman : Rp {this.context.pinjaman} juta,-</h5>
                 <Slider
                     step={1}
                     min={2}
@@ -32,7 +32,7 @@ class Slider2 extends Component {
     renderPeriodeSlider = () => {
         return (
             <div>
-                <h4>Lama Pinjaman :{this.context.periode} bulan</h4>
+                <h5>Lama Pinjaman : {this.context.periode} bulan</h5>
                 <Slider
                     step={1}
                     min={6}
@@ -49,15 +49,15 @@ class Slider2 extends Component {
 
     render() {
         console.log(this.context.pinjaman)
-        const { name, phone, email, nik, emailOwned, tujuanPinjaman, tahuTunaiku, pinjaman, periode, angsuran, gender, birth } = this.context
+        const {angsuran } = this.context
         return (
             <div>
-                <div className='card col my-2 mx-auto'>
+                
                     <div className='card-body row text-white bg-card'>
-                        <h3 className='col float-left'>Cicilan : </h3>
+                        <h5 className='col float-left' style={{fontSize : '20px'}}>Cicilan : </h5>
                         <div className='float-right'>
-                            <span >Rp {angsuran},-</span> <br></br>
-                            <span>per bulan</span>
+                            <h2>Rp {angsuran},-</h2> <br></br>
+                            <span className='float-right'>per bulan</span>
                         </div>
 
 
@@ -72,7 +72,7 @@ class Slider2 extends Component {
                     </div>
                     
 
-                </div>
+                
             </div>
         );
     }
